@@ -1,4 +1,4 @@
-FROM --platform=${BUILDPLATFORM} golang:1.19-alpine AS builder
+FROM golang:1.19-alpine AS builder
 ARG TARGETOS
 ARG TARGETARCH
 # Git is required for getting the dependencies.
